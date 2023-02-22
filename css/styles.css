@@ -61,10 +61,12 @@ p {
 a {
     text-decoration: none;
 }
+
 .timeline p a {
     color: #a87067;
     font-weight: bold;
 }
+
 /* Navbar customization */
 .nav-link, .navbar-expand-lg {
     color: #DBA39A;
@@ -431,6 +433,9 @@ a {
 }
 
 @media (max-width: 768px) {
+    .nav-item {
+        --bs-border-color: none;
+    }
 
     .timeline::after {
         left: 90px;
