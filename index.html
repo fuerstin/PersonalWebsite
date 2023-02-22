@@ -2,73 +2,226 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Christina Obermayer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="images/favicon.ico">
+    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Droid+Sans'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&family=Dancing+Script&family=Raleway:wght@100&family=Righteous&family=Space+Grotesk:wght@300&family=Srisakdi&display=swap"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
           rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2843c7ca23.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<div class="top-container">
-    <div class="cloud-float">
-        <img class="top-cloud" src="images/cloud.png" alt="cloud-img">
-        <h1>I'm Christina.</h1>
-        <h2 class="extra-color">a molecular biologist and programmer.</h2>
-        <img class="bottom-cloud" src="images/cloud.png" alt="cloud-img">
-        <img src="images/mountain.png" alt="mountain-img">
-    </div>
-</div>
-<div class="middle-container">
-    <div class="profile">
-        <img class="profile-pic" src="images/bewerbungsbild-2.png" alt="this-is-me">
-        <h2>Hello.</h2>
-        <p>I am a passionate molecular biologist and love coding. Currently, I am learning how to create a website.</p>
-    </div>
-    <hr>
-    <div class="skills">
-        <h2>My Skills.</h2>
-        <div class="skill-row">
-            <a href="https://www.flaticon.com/free-icons/molecular" title="Molecular icons">
-                <img class="mol-bio" src="images/molecular.png" alt="molecule">
-            </a>
-            <div>
-                <h3>Molecular Biology</h3>
-                <p>I have a Master's degree in Molecular Biology from the University of Salzburg. During my studies,
-                    I collected experience in many laboratories and methods.</p>
+<!-- Intro Section -->
+<div class="top-container light-section" id="top">
+    <!--    Navbar -->
+    <nav class="navbar navbar-expand-lg pb-4 px-4">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ">
+                <li class="nav-item px-1 border-end border-opacity-50">
+                    <a class="nav-link" href="#about-me">About</a>
+                </li>
+                <li class="nav-item px-1 border-end">
+                    <a class="nav-link" href="#academic">Education</a>
+                </li>
+                <li class="nav-item px-1 border-end">
+                    <a class="nav-link" href="#experience">Experience</a>
+                </li>
+                <li class="nav-item px-1 border-end">
+                    <a class="nav-link" href="#downloads">Downloads</a>
+                </li>
+                <li class="nav-item px-1">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--    Navbar end -->
+    <!--    Top, light section with illustration -->
+    <h1 class="intro">I'm Christina.</h1>
+    <h2 class="extra-color">a molecular biologist and programmer.</h2>
+    <div class="container-fluid text-center">
+        <div class="row">
+            <div class="illustrations cloud-float col-md-4 col-12">
+                <a href="https://www.flaticon.com/free-icons/snowflake" title="snowflake icons">
+                    <img class="top-cloud" src="images/snowflake.png" alt="cloud-img">
+                </a>
+            </div>
+            <div class="illustrations mountain col-md-4 col-12">
+                <a href="https://www.flaticon.com/free-icons/snowfall" title="snowfall icons">
+                    <img class="mnt-img" src="images/mountain-winter.png" alt="mountain-img">
+                </a>
+            </div>
+            <div class="illustrations cloud-float col-md-4 col-12">
+                <a href="https://www.flaticon.com/free-icons/snowflake" title="snowflake icons">
+                    <img class="bottom-cloud" src="images/snowflake.png" alt="cloud-img">
+                </a>
             </div>
         </div>
-        <div class="skill-row coding">
-            <a href="https://www.flaticon.com/free-icons/coding" title="coding icons">
-                <img class="computer" src="images/programming.png" alt="programming icon">
-            </a>
-            <div>
-                <h3>Programming</h3>
-                <p>I have done training in several programming languages, markup languages and more. Among them are Python,
-                    C++, HTML, CSS and LaTeX.</p>
-            </div>
-        </div>
     </div>
-    <div class="hr-container">
-        <hr>
 
+</div>
+<!-- Profile section: Picture, short introduction -->
+<div class="middle-container" id="about-me">
+    <div class="profile dark-section">
+        <img class="profile-pic" src="images/bewerbungsbild-2-modified.png" alt="this-is-me">
+        <h2>Hello.</h2>
+        <p class="description">I am a passionate molecular biologist and love coding. Currently, I am learning how to
+            create a website.</p>
     </div>
-    <div class="contact-me">
+    <!--    Academic education  -->
+    <div class="skills light-section" id="academic">
+        <h2>Education</h2>
+        <div class="container text-center">
+            <div class="skill-row row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="edu-container">
+                        <i class="fa-solid fa-school"></i>
+                        <h3>Abitur</h3>
+                    </div>
+                    <p class="skill">2014</p>
+                    <p class="institution">Rottmayr-Gymnasium Laufen</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="edu-container">
+                        <i class="fa-solid fa-building-columns"></i>
+                        <h3><span class="title">B.Sc.</span> Molecular Life Sciences</h3>
+                    </div>
+                    <p class="skill">2019</p>
+                    <p class="institution">Paris Lodron University of Salzburg</p>
+                </div>
+                <div class="col-12 col-lg-4 col-md-6 third-col">
+                    <div class="edu-container">
+                        <i class="fa-solid fa-building-columns"></i>
+                        <h3><span class="title">M.Sc.</span> Molecular Biology</h3>
+                    </div>
+                    <p class="skill">2022</p>
+                    <p class="institution">Paris Lodron University of Salzburg</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--    Practical experience with timeline -->
+    <div id="experience" class="dark-section">
+        <h2>My practical experience</h2>
+        <h3>Curricular practical trainings</h3>
+        <div class="timeline">
+            <div class="container left">
+                <div class="date">2020</div>
+                <i class="icon fa fa-home"></i>
+                <div class="content">
+                    <h2>Protein Bioinformatics</h2>
+                    <p>First programming experience updating the <a href="https://pbwww.services.came.sbg.ac.at/PFS2/">Protein Function Score Service</a>.</p>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="date">2019</div>
+                <i class="icon fa fa-gift"></i>
+                <div class="content">
+                    <h2>Protein Bioinformatics</h2>
+                    <p>Assessment by means of <a href="https://prosa.services.came.sbg.ac.at/prosa.php">ProSA</a> of protein structures calculated by <a href="https://alphafold.ebi.ac.uk/">AlphaFold</a>.</p>
+                </div>
+            </div>
+        </div>
+        <h3>Extracurricular practical trainings</h3>
+        <p>Here will appear my practical experience.</p>
+        <div class="timeline">
+            <div class="container left">
+                <div class="date">2015</div>
+                <i class="icon fa fa-home"></i>
+                <div class="content">
+                    <h2>Histology department</h2>
+                    <p>LKH Salzburg</p>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="date">2016</div>
+                <i class="icon fa fa-gift"></i>
+                <div class="content">
+                    <h2>LAURA BASSI CENTRE OF EXPERTISE</h2>
+                    <p>LKH Salzburg</p>
+                </div>
+            </div>
+            <div class="container left">
+                <div class="date">2017</div>
+                <i class="icon fa fa-user"></i>
+                <div class="content">
+                    <h2>Stratec Consumables GmbH</h2>
+                    <p>BIOLOGICS · Salzburg</p>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="date">2018</div>
+                <i class="icon fa fa-running"></i>
+                <div class="content">
+                    <h2>Novogenia GmbH</h2>
+                    <p>SNP ANALYSIS · Salzburg
+                    </p>
+                </div>
+            </div>
+            <div class="container left">
+                <div class="date">2019</div>
+                <i class="icon fa fa-cog"></i>
+                <div class="content">
+                    <h2>University of Salzburg</h2>
+                    <p>Allergy Vaccines and Immunotherapeutics Salzburg</p>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="date">2020</div>
+                <i class="icon fa fa-certificate"></i>
+                <div class="content">
+                    <h2>Novogenia GmbH</h2>
+                    <p>SARS-CoV-2 Testing Salzburg</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--    Download section: CV download -->
+    <div id="downloads" class="light-section">
+        <h2>Get my CV now!</h2>
+        <p>If you want to know more details, you can download my CV here.</p>
+        <a href="./download-files/Obermayer-cv.pdf" download="Obermayer-CV"
+           class="btn btn-lg btn-outline-light download-cv m-2">English CV</a>
+        <a href="./download-files/Obermayer-cv-de.pdf" download="Obermayer-Lebenslauf"
+           class="btn btn-lg btn-outline-light download-cv m-2">German CV</a>
+    </div>
+    <!--    Contact section: E-mail me -->
+    <div class="contact-me dark-section" id="contact">
         <h2>Get In Touch</h2>
         <h3>Feel free to contact me.</h3>
-        <p>If you have any questions or just want to get in touch, use the link below to write an e-mail to me.</p>
-        <a class="btn" href="mailto:christina.obermayer@mail.com">CONTACT ME</a>
+        <p class="description">If you have any questions, offers or requests or just want to get in touch, use the link
+            below to write an
+            e-mail to me.</p>
+        <button type="button" class="btn btn-lg btn-outline-light contact-btn">
+            <a href="mailto:christina.obermayer@mail.com" class="contact-button">CONTACT ME</a>
+        </button>
     </div>
 </div>
 
-
+<!-- Additional links to website, LinkedIn -->
 <div class="bottom-container">
-    <a class="footer-link" href="https://www.linkedin.com/in/christina-obermayer">LinkedIn</a>
-    <!-- <a class="footer-link" href="https://twitter.com/">Twitter</a> -->
-    <a class="footer-link" href="https://fuerstin.github.io/cv/">Website</a>
-    <p class="copyright">© Christina Obermayer.</p>
+    <a class="footer-link" href="https://www.linkedin.com/in/christina-obermayer">
+        <i class="fa-brands fa-linkedin"></i>
+    </a>
+    <a class="footer-link" href="https://fuerstin.github.io/PersonalWebsite/">Website</a>
+    <p class="copyright">© 2023 Christina Obermayer.</p>
 </div>
-
+<a href="#top" class="up-button">
+    <i class="fa-solid fa-arrow-up-long"></i>
+</a>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
 </html>
